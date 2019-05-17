@@ -89,7 +89,8 @@
       "!src/**/*.d.ts"
     ],
     "setupFiles": [
-      "react-app-polyfill/jsdom"
+      "react-app-polyfill/jsdom",
+      "<rootDir>/src/setupTests.js"
     ],
     "setupFilesAfterEnv": [],
     "testMatch": [
@@ -134,12 +135,17 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-transform-react-jsx-self": "^7.2.0",
+    "@babel/plugin-transform-react-jsx-source": "^7.2.0",
     "@semantic-release/changelog": "^3.0.2",
     "@semantic-release/commit-analyzer": "^6.1.0",
     "@semantic-release/exec": "^3.3.2",
     "@semantic-release/git": "^7.0.8",
     "@semantic-release/github": "^5.2.10",
     "@semantic-release/release-notes-generator": "^7.1.4",
+    "@types/enzyme": "^3.9.2",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.13.0",
     "semantic-release": "^15.13.12",
     "tslint": "^5.16.0",
     "tslint-react": "^4.0.0"
